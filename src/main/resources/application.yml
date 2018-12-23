@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eureka-provider-metadata
+server:
+  port: 8001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:password@127.0.0.1:8761/eureka/
+  instance:
+    prefer-ip-address: true
+#    自定义元数据
+    metadata-map:
+      my-metadata: 自定义元数据
